@@ -1,0 +1,17 @@
+--- ./Makefile.orig	2012-01-03 14:48:59.000000000 +0100
++++ ./Makefile	2012-04-05 13:32:06.028998699 +0200
+@@ -1,9 +1,9 @@
+-BINDIR=/usr/bin
+-MODDIR=/usr/share/fhem
++BINDIR=${PREFIX}/bin
++MODDIR=${PREFIX}/share/fhem
+ VARDIR=/var/log/fhem
+-DOCDIR=/usr/share/doc/fhem
+-MANDIR=/usr/share/man/man1
+-ETCDIR=/etc
++DOCDIR=${PREFIX}/share/doc/fhem
++MANDIR=${PREFIX}/man/man1
++ETCDIR=${PREFIX}/etc
+ 
+ # Used for .deb package creation
+ RBINDIR=$(ROOT)$(BINDIR)
